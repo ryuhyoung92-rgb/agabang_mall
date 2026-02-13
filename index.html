@@ -17,56 +17,52 @@
                 <ul id="gnb">
                     <li class="menu">
                         <a href="#"><img src="./images/menu.png" alt="">메뉴</a>
-                        <ul class="lnb_depth1">
-                            <li class="top">
-                                <div class="login_join">
-                                    <a href="#" class="login_btn">로그인</a>
-                                    <span></span>
-                                    <a href="#" class="join_btn">회원가입</a>
-                                </div>
+                        <div class="lnb_depth1">
+                            <div class="top">
+                                <a href="#" class="login_btn">로그인</a>
+                                <span></span>
+                                <a href="#" class="join_btn">회원가입</a>
                                 <div class="search_close">
                                     <a href="#" class="search_btn"><img src="#" alt=""></a>
                                     <a href="#" class="close_btn"><img src="#" alt=""></a>
                                 </div>
-                            </li>
-                            <li class="middle">
-                                <div class="shop">
+                            </div>
+                            <ul class="middle">
+                                <li class="shop">
                                     <a href="#" class="shop_btn">SHOP</a>
                                     <a href="#" class="more_btn"><img src="#" alt=""></a>
-                                </div>
-                                <div class="brand">
+                                </li>
+                                <li class="brand">
                                     <a href="#" class="brand_btn">BRAND</a>
                                     <a href="#" class="more_btn"><img src="#" alt=""></a>
-                                </div>
-                                <div class="event">
+                                </li>
+                                <li class="event">
                                     <a href="#" class="event_btn">EVENT</a>
                                     <a href="#" class="more_btn"><img src="#" alt=""></a>
-                                </div>
-                                <div class="outlet">
+                                </li>
+                                <li class="outlet">
                                     <a href="#" class="outlet_btn">OUTLET</a>
                                     <a href="#" class="more_btn"><img src="#" alt=""></a>
-                                </div>
-                                <div class="gift_shop">
+                                </li>
+                                <li class="gift_shop">
                                     <a href="#" class="gift_shop_btn">GIFT SHOP</a>
                                     <a href="#" class="more_btn"><img src="#" alt=""></a>
-                                </div>
-                                <div class="community">
+                                </li>
+                                <li class="community">
                                     <a href="#" class="community_btn">COMMUNITY</a>
                                     <a href="#" class="more_btn"><img src="#" alt=""></a>
-                                </div>
-                            </li>
-                            <li class="lnb">
+                                </li>
+                            </ul>
+                            <div class="lnb">
                                 <a href="#" class="mypage_btn">마이페이지</a>
                                 <a href="#" class="order_btn">주문조회</a>
                                 <a href="#" class="inquiry_btn">1:1 문의</a>
                                 <a href="#" class="like_product_btn">관심상품</a>
                                 <a href="#" class="questions_btn">자주 묻는 질문</a>
-                            </li>
-                            <li class="bottom">
-                                <div class="logo_heritage">
-                                    <span>HERITAGE</span>
-                                    <p>아가방의 로고에 담긴 헤리지티</p>
-                                </div>
+                            </div>
+                            <div class="bottom">
+                                <span>HERITAGE</span>
+                                <p>아가방의 로고에 담긴 헤리지티</p>
                                 <div id="logo_heritage_slide_wrap">
                                     <div class="slide_container">
                                         <div class="slide">
@@ -80,11 +76,38 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class="search">
                         <a href="#"><img src="./images/search.png" alt="">검색</a>
+                        <div class="lnb_depth1">
+                            <div class="top">
+                                <div class="search-wrap">
+                                    <div class="search_box">
+                                        <input type="text" placeholder="검색어를 입력해주세요." name="search_bar" id="search_bar">
+                                        <a href="#" class="search_btn"><img src="#" alt=""></a>
+                                    </div>
+                                </div>
+                                <a href="#" class="close_btn"><img src="#" alt=""></a>
+                                <div class="text">
+                                    <p>최근 검색어</p>
+                                    <a href="#">전체삭제</a>
+                                </div>
+                                <p>최근 검색어가 없습니다.</p>
+                            </div>
+                            <span></span>
+                            <div class="bottom">
+                                <ol class="popular_search">
+                                    <li>1<a href="#">아가방 봄신상</a></li>
+                                    <li>2<a href="#">아가방 겨울신상</a></li>
+                                    <li>3<a href="#">디즈니베이비 겨울신상</a></li>
+                                    <li>4<a href="#">26년 말띠 선물세트</a></li>
+                                    <li>5<a href="#">선물세트</a></li>
+                                    <li>6<a href="#">아가방좋은</a></li>
+                                </ol>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -98,7 +121,7 @@
                         <a href="#"><img src="./images/like.png" alt="">관심</a>
                     </li>
                     <li class="cart">
-                        <a href="#"><img src="./images/cart.png" alt="">장바구니<span>2</span></a>
+                        <a href="#"><img src="./images/cart.png" alt="">장바구니<span class="number">2</span></a>
                     </li>
                 </ul>
             </div>
@@ -193,8 +216,8 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/product1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방</p>
@@ -205,8 +228,8 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/product1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방</p>
@@ -217,8 +240,8 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/product1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방좋은</p>
@@ -229,8 +252,8 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/product1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방</p>
@@ -241,8 +264,8 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/product1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방</p>
@@ -253,8 +276,8 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/product1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방좋은</p>
@@ -265,8 +288,8 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/product1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방</p>
@@ -277,8 +300,8 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/product1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방</p>
@@ -294,23 +317,21 @@
                     <p>선물하기</p>
                 </div>
                 <div class="product">
-                    <div class="gift_set">
-                        <a href="#" class="main_product"><!-- bg -->
-                            <div class="text_contents">
-                                <h2>GIFT SET</h2>
-                                <p>마음을 전하는 특별한 순간,<br>
-                                정성으로 완성한 선물세트</p>
-                                <p class="more">자세히 보기<img src="#" alt=""></p>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="#" class="main_product"><!-- bg -->
+                        <div class="text_contents">
+                            <h2>GIFT SET</h2>
+                            <p>마음을 전하는 특별한 순간,<br>
+                            정성으로 완성한 선물세트</p>
+                            <p class="more">자세히 보기<img src="#" alt=""></p>
+                        </div>
+                    </a>
                     <div class="gift_set">
                         <ul class="contents">
                             <li class="product">
                                 <div class="thumnail">
-                                    <a href=""><img src="./images/gift_set_2.jpg" alt=""></a>
-                                    <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                                    <a href="#">장바구니 담기<img src="#" alt=""></a>
+                                    <a href="#"><img src="./images/gift_set_2.jpg" alt=""></a>
+                                    <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                                    <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                                 </div>
                                 <div class="contents">
                                     <p class="brand">아가방</p>
@@ -321,8 +342,8 @@
                             <li class="product">
                                 <div class="thumnail">
                                     <a href=""><img src="./images/gift_set_2.jpg" alt=""></a>
-                                    <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                                    <a href="#">장바구니 담기<img src="#" alt=""></a>
+                                    <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                                    <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                                 </div>
                                 <div class="contents">
                                     <p class="brand">아가방</p>
@@ -333,8 +354,8 @@
                             <li class="product">
                                 <div class="thumnail">
                                     <a href=""><img src="./images/gift_set_2.jpg" alt=""></a>
-                                    <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                                    <a href="#">장바구니 담기<img src="#" alt=""></a>
+                                    <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                                    <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                                 </div>
                                 <div class="contents">
                                     <p class="brand">아가방</p>
@@ -345,8 +366,8 @@
                             <li class="product">
                                 <div class="thumnail">
                                     <a href=""><img src="./images/gift_set_2.jpg" alt=""></a>
-                                    <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                                    <a href="#">장바구니 담기<img src="#" alt=""></a>
+                                    <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                                    <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                                 </div>
                                 <div class="contents">
                                     <p class="brand">아가방</p>
@@ -357,8 +378,8 @@
                             <li class="product">
                                 <div class="thumnail">
                                     <a href=""><img src="./images/gift_set_2.jpg" alt=""></a>
-                                    <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                                    <a href="#">장바구니 담기<img src="#" alt=""></a>
+                                    <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                                    <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                                 </div>
                                 <div class="contents">
                                     <p class="brand">아가방</p>
@@ -369,8 +390,8 @@
                             <li class="product">
                                 <div class="thumnail">
                                     <a href=""><img src="./images/gift_set_2.jpg" alt=""></a>
-                                    <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                                    <a href="#">장바구니 담기<img src="#" alt=""></a>
+                                    <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                                    <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                                 </div>
                                 <div class="contents">
                                     <p class="brand">아가방</p>
@@ -381,8 +402,8 @@
                             <li class="product">
                                 <div class="thumnail">
                                     <a href=""><img src="./images/gift_set_2.jpg" alt=""></a>
-                                    <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                                    <a href="#">장바구니 담기<img src="#" alt=""></a>
+                                    <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                                    <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                                 </div>
                                 <div class="contents">
                                     <p class="brand">아가방</p>
@@ -393,8 +414,8 @@
                             <li class="product">
                                 <div class="thumnail">
                                     <a href=""><img src="./images/gift_set_2.jpg" alt=""></a>
-                                    <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                                    <a href="#">장바구니 담기<img src="#" alt=""></a>
+                                    <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                                    <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                                 </div>
                                 <div class="contents">
                                     <p class="brand">아가방</p>
@@ -412,7 +433,7 @@
                     </div>
                 </div>
             </div>
-            <div class="NEW ITEM">
+            <div class="new_item">
                 <div class="title">
                     <div class="text">
                         <h1>NEW ITEM</h1>
@@ -427,7 +448,7 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/NEW_ITEM1.jpg" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방</p>
@@ -438,7 +459,7 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/NEW_ITEM1.jpg" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방</p>
@@ -449,8 +470,8 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/NEW_ITEM1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방</p>
@@ -461,8 +482,8 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/NEW_ITEM1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방</p>
@@ -473,8 +494,8 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/NEW_ITEM1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방</p>
@@ -485,8 +506,8 @@
                     <li class="product">
                         <div class="thumnail">
                             <a href="#"><img src="./images/NEW_ITEM1.jpg" alt=""></a>
-                            <a href="#"><img src="./images/like_icon.png" alt=""></a>
-                            <a href="#">장바구니 담기<img src="#" alt=""></a>
+                            <a href="#" class="like"><img src="./images/like_icon.png" alt=""></a>
+                            <a href="#" class="cart">장바구니 담기<img src="#" alt=""></a>
                         </div>
                         <div class="contents">
                             <p class="brand">아가방</p>
@@ -514,7 +535,7 @@
                 <a href="#" class="prev"><img src="#" alt="이전"></a>
                 <a href="#" class="next"><img src="#" alt="다음"></a>
             </div>
-            <div class="BRAND">
+            <div class="brand">
                 <div class="title">
                     <h1>BRAND</h1>
                     <p>아가방 대표 브랜드</p>
@@ -573,7 +594,7 @@
                 </ul>
             </div>
             <div id="company_service">
-                <ul class="favicon">
+                <ul class="fnb">
                     <li><a href="#">공지사항</a></li>
                     <li><a href="#">자주 묻는 질문</a></li>
                     <li><a href="#">1:1문의</a></li>
