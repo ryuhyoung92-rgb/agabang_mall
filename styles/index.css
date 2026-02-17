@@ -108,4 +108,101 @@ body {}
 #wrap main .steady_seller .contents .brand h2 a {}
 #wrap main .steady_seller .contents .brand .price {}
 #wrap main .steady_seller .contents .brand .price del {}
+#wrap main .gift_shop {}
+#wrap main .gift_shop .title {}
+#wrap main .gift_shop .title h1 {}
+#wrap main .gift_shop .title > p {}
+#wrap main .gift_shop .product {}
+#wrap main .gift_shop .product .main_product {}
+#wrap main .gift_shop .product .main_product h2 {}
+#wrap main .gift_shop .product .main_product p {}
+#wrap main .gift_shop .product .main_product p img {}
+#wrap main .gift_shop .product .gift_set {}
+#wrap main .gift_shop .product .gift_set > .contents {}
+#wrap main .gift_shop .product .gift_set .contents .product {}
+#wrap main .gift_shop .product .gift_set .contents .product .thumnail {}
+#wrap main .gift_shop .product .gift_set .contents .product .thumnail > a {}
+#wrap main .gift_shop .product .gift_set .contents .product .thumnail a img {}
+#wrap main .gift_shop .product .gift_set .contents .product .thumnail .like {}
+#wrap main .gift_shop .product .gift_set .contents .product .thumnail .like img {}
+#wrap main .gift_shop .product .gift_set .contents .product .thumnail .cart {}
+#wrap main .gift_shop .product .gift_set .contents .product .thumnail .cart img {}
+#wrap main .gift_shop .product .gift_set .contents .product .contents {}
+#wrap main .gift_shop .product .gift_set .contents .product .contents .brand {}
+#wrap main .gift_shop .product .gift_set .contents .product .contents h2 {}
+#wrap main .gift_shop .product .gift_set .contents .product .contents h2 a {}
+#wrap main .gift_shop .product .gift_set .contents .product .contents p {}
+#wrap main .gift_shop .product .gift_set .contents .product .contents p em {}
+#wrap main .gift_shop .product .gift_set .contents .product .contents p del {}
+#wrap main .gift_shop .product .gift_set .prev {}
+#wrap main .gift_shop .product .gift_set .prev img {}
+#wrap main .gift_shop .product .gift_set .next {}
+#wrap main .gift_shop .product .gift_set .next img {}
+#wrap main .gift_shop .product .gift_set .page {}
+#wrap main .gift_shop .product .gift_set .page .current {}
+#wrap main .gift_shop .product .gift_set .page .all {}
+#wrap main .new_item {}
+#wrap main .new_item .title {}
+#wrap main .new_item .title .text {}
+#wrap main .new_item .title .text h1 {}
+#wrap main .new_item .title .text p {}
+#wrap main .new_item .title .right_control_btn {}
+#wrap main .new_item .title .right_control_btn .prev {}
+#wrap main .new_item .title .right_control_btn .prev img {}
+#wrap main .new_item .title .right_control_btn .next {}
+#wrap main .new_item .title .right_control_btn .next img {}
+#wrap main .new_item > .contents {}
+#wrap main .new_item .contents .product {}
+#wrap main .new_item .contents .product .thumnail {}
+#wrap main .new_item .contents .product .thumnail > a {}
+#wrap main .new_item .contents .product .thumnail a img {}
+#wrap main .new_item .contents .product .thumnail .cart {}
+#wrap main .new_item .contents .product .thumnail .cart img {}
+#wrap main .new_item .contents .product .contents {}
+#wrap main .new_item .contents .product .contents > p {}
+#wrap main .new_item .contents .product .contents h2 {}
+#wrap main .new_item .contents .product .contents h2 a {}
+#wrap main .new_item .contents .product .contents .price {}
+#wrap main .event_bnr {}
+#wrap main .event_bnr .slide_container {}
+#wrap main .event_bnr .slide_container .slide {}
+#wrap main .event_bnr .slide_container .slide .membership {}
+#wrap main .event_bnr .slide_container .slide .membership h1 {}
+#wrap main .event_bnr .slide_container .slide .membership p {}
+#wrap main .event_bnr .slide_container .slide .online_only h1 {}
+#wrap main .event_bnr .slide_container .slide .online_only p {}
+#wrap main .event_bnr .prev {}
+#wrap main .event_bnr .prev img {}
+#wrap main .event_bnr .next {}
+#wrap main .event_bnr .next img {}
+#wrap main .brand {}
+#wrap main .brand .title {}
+#wrap main .brand .title h1 {}
+#wrap main .brand .title p {}
+#wrap main .brand .contents {}
+#wrap main .brand .contents .product {}
+#wrap main .brand .contents .product .text_contents {}
+#wrap main .brand .contents .product .text_contents h2 {}
+#wrap main .brand .contents .product .text_contents > p {}
+#wrap main .brand .contents .product .text_contents .more {}
+#wrap main .brand .contents .product .text_contents .more img {}
 #wrap footer {}
+#wrap footer .company_info {}
+#wrap footer .company_info h1 {}
+#wrap footer .company_info h1 a {}
+#wrap footer .company_info h1 a img {}
+#wrap footer .company_info address {}
+#wrap footer .company_info address a {}
+#wrap footer .company_info p {}
+#wrap footer .company_info .fnb {}
+#wrap footer .company_info .fnb li {}
+#wrap footer .company_info .fnb li a {}
+#wrap footer .company_service {}
+#wrap footer .company_service .fnb {}
+#wrap footer .company_service .fnb li {}
+#wrap footer .company_service .fnb li a {}
+#wrap footer .company_service .customer_service {}
+#wrap footer .company_service .customer_service dt {}
+#wrap footer .company_service .customer_service dt a {}
+#wrap footer .company_service .customer_service dd {}
+#wrap footer .company_service #family_site {}
