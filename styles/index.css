@@ -1,4 +1,6 @@
-body {}
+body {
+    
+}
 #wrap {}
 #wrap header {}
 #wrap header nav {}
@@ -86,21 +88,39 @@ body {}
 #wrap main #hero_bnr_slide_wrap .pagination .active {}
 #wrap main #hero_bnr_slide_wrap .pagination span
 #wrap main .steady_seller {}
-#wrap main .steady_seller .title {}
-#wrap main .steady_seller .title .text {}
-#wrap main .steady_seller .title .text h1 {}
-#wrap main .steady_seller .title .text p {}
-#wrap main .steady_seller .title .right_control_btn {}
+#wrap main .steady_seller .title {
+    overflow:hidden;
+}
+#wrap main .steady_seller .title .text {
+    float:left;
+}
+#wrap main .steady_seller .title .text h1 {font-size:1.6rem;}
+#wrap main .steady_seller .title .text p {font-size:0.9375rem}
+#wrap main .steady_seller .title .right_control_btn {
+    float:right;
+}
 #wrap main .steady_seller .title .right_control_btn a {}
 #wrap main .steady_seller .title .right_control_btn .prev {}
 #wrap main .steady_seller .title .right_control_btn .next {}
-#wrap main .steady_seller .contents {}
+#wrap main .steady_seller .contents {
+    font-size:0.8125px;
+    display: inline-block;
+}
 #wrap main .steady_seller .contents .product {}
 #wrap main .steady_seller .contents .product .thumnail {}
 #wrap main .steady_seller .contents .product .thumnail a {}
-#wrap main .steady_seller .contents .product .thumnail a img {}
+#wrap main .steady_seller .contents .product .thumnail a img {
+    width: 347.4px;
+    display: inline-block;
+    overflow:hidden;
+    position:relative;
+}
 #wrap main .steady_seller .contents .product .thumnail .like {}
-#wrap main .steady_seller .contents .product .thumnail .like img {}
+#wrap main .steady_seller .contents .product .thumnail .like img {
+    width: 24px;
+    float:right;
+    position: absolute; left:0; top:0;
+}
 #wrap main .steady_seller .contents .product .thumnail .cart {}
 #wrap main .steady_seller .contents .product .thumnail .cart img {}
 #wrap main .steady_seller .contents .brand {}
