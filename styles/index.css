@@ -89,40 +89,48 @@ body {
 #wrap main #hero_bnr_slide_wrap .pagination span
 #wrap main .steady_seller {}
 #wrap main .steady_seller .title {
-    overflow:hidden;
+    display:flex;
+    flex-flow:row nowrap;
 }
 #wrap main .steady_seller .title .text {
-    float:left;
+    align-content:space-between;
 }
 #wrap main .steady_seller .title .text h1 {font-size:1.6rem;}
 #wrap main .steady_seller .title .text p {font-size:0.9375rem}
 #wrap main .steady_seller .title .right_control_btn {
-    float:right;
+
 }
 #wrap main .steady_seller .title .right_control_btn a {}
 #wrap main .steady_seller .title .right_control_btn .prev {}
 #wrap main .steady_seller .title .right_control_btn .next {}
 #wrap main .steady_seller .contents {
-    font-size:0.8125px;
-    display: inline-block;
+    font-size:0.8125rem;
+    display:inline-block;
+    line-height:1.5;
 }
 #wrap main .steady_seller .contents .product {}
-#wrap main .steady_seller .contents .product .thumnail {}
+#wrap main .steady_seller .contents .product .thumnail {
+    position:relative;
+}
 #wrap main .steady_seller .contents .product .thumnail a {}
 #wrap main .steady_seller .contents .product .thumnail a img {
     width: 347.4px;
-    display: inline-block;
-    overflow:hidden;
-    position:relative;
 }
 #wrap main .steady_seller .contents .product .thumnail .like {}
 #wrap main .steady_seller .contents .product .thumnail .like img {
     width: 24px;
     float:right;
-    position: absolute; left:0; top:0;
+    position: absolute; left:315px; top:2%;
 }
 #wrap main .steady_seller .contents .product .thumnail .cart {}
 #wrap main .steady_seller .contents .product .thumnail .cart img {}
+#wrap main .steady_seller .contents .product .product_info {
+    align-content:space-between;
+}
+#wrap main .steady_seller .contents .product .product_info .brand {}
+#wrap main .steady_seller .contents .product .product_info h2 {}
+#wrap main .steady_seller .contents .product .product_info h2 img {}
+#wrap main .steady_seller .contents .product .product_info .price {}
 #wrap main .steady_seller .contents .brand {}
 #wrap main .steady_seller .contents .brand h2 {}
 #wrap main .steady_seller .contents .brand h2 a {}
