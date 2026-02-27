@@ -7,7 +7,9 @@
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>아가방몰</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
@@ -16,94 +18,107 @@
             <nav>
                 <ul id="gnb">
                     <li class="menu">
-                        <a href="#"><img src="./images/menu.png" alt="">메뉴</a>
+                        <a href="#" onclick="
+                            $('.menu .lnb_depth1').show();
+                        "><img src="./images/menu.png" alt="">메뉴</a>
                         <div class="lnb_depth1">
-                            <div class="top">
-                                <a href="#" class="login_btn">로그인</a>
-                                <!-- <span></span> css에서 before,after 작업하기 -->
-                                <a href="#" class="join_btn">회원가입</a>
-                                <div class="search_close">
-                                    <a href="#" class="search_btn"><img src="#" alt=""></a>
-                                    <a href="#" class="close_btn"><img src="#" alt="닫기"></a>
+                            <div class="lnb_depth1_top">
+                                <div class="top">
+                                    <div class="top_left">
+                                        <a href="#" class="login_btn">로그인</a>
+                                        <!-- <span></span> css에서 before,after 작업하기 -->
+                                        <a href="#" class="join_btn">회원가입</a>
+                                    </div>
+                                    <div class="top_right">
+                                        <a href="./images/search.png" class="search_btn"><img src="#" alt=""></a>
+                                        <a href="#" class="close_btn" onclick="
+                            $('.menu .lnb_depth1').hide();
+                            "><img src="#" alt="닫기"></a>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <a href="#" onclick="
+                                            $('.ul .li .lnb_depth2').show();
+                                        ">SHOP</a>
+                                        <a href="#" class="more_btn"><img src="#" alt="더보기"></a></a>
+                                        <ul class="lnb_depth2">
+                                            <li><a href="#">의류</a>
+                                                <div class="lnb_depth3">
+                                                    <div class="left_contents">
+                                                        <a href="#">내의/우주복</a>
+                                                        <a href="#">상의/티</a>
+                                                        <a href="#">원피스</a>
+                                                        <a href="#">악세서리(모자,신발,잡화)</a>
+                                                    </div>
+                                                    <div class="right_contents">
+                                                        <a href="#">상하복/세트</a>
+                                                        <a href="#">하의/바지/레깅스</a>
+                                                        <a href="#">점퍼/자켓/가디건</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li><a href="#">출산준비/용품</a></li>
+                                            <li><a href="#">아울렛</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">BRAND</a>
+                                        <a href="#" class="more_btn"><img src="#" alt="더보기"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">EVENT</a></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">OUTLET</a>
+                                        <a href="#" class="more_btn"><img src="#" alt="더보기"></a></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">GIFT SHOP</a>
+                                        <a href="#" class="more_btn"><img src="#" alt="더보기"></a></a>
+                                    </li>
+                                    <li>
+                                        <a href="#">COMMUNITY</a>
+                                        <a href="#" class="more_btn"><img src="#" alt="더보기"></a></a>
+                                    </li>
+                                </ul>
+                                <div class="lnb">
+                                    <a href="#" class="mypage_btn">마이페이지</a>
+                                    <a href="#" class="order_btn">주문조회</a>
+                                    <a href="#" class="inquiry_btn">1:1 문의</a>
+                                    <a href="#" class="like_product_btn">관심상품</a>
+                                    <a href="#" class="questions_btn">자주 묻는 질문</a>
                                 </div>
                             </div>
-                            <ul>
-                                <li>
-                                    <a href="#">SHOP</a>
-                                    <a href="#" class="more_btn"><img src="#" alt="더보기"></a></a>
-                                    <ul class="lnb_depth2">
-                                        <li><a href="#">의류</a>
-                                            <div class="lnb_depth3">
-                                                <div class="left_contents">
-                                                    <a href="#">내의/우주복</a>
-                                                    <a href="#">상의/티</a>
-                                                    <a href="#">원피스</a>
-                                                    <a href="#">악세서리(모자,신발,잡화)</a>
-                                                </div>
-                                                <div class="right_contents">
-                                                    <a href="#">상하복/세트</a>
-                                                    <a href="#">하의/바지/레깅스</a>
-                                                    <a href="#">점퍼/자켓/가디건</a>
-                                                </div>
+                            <div class="lnb_depth1_bottom">
+                                <div class="heritage">
+                                    <div class="heritage_txt">
+                                        <p>HERITAGE</p>
+                                        <p>아가방의 로고에 담긴 헤리지티</p>
+                                    </div>
+                                    <div id="logo_heritage_slide_wrap">
+                                        <div class="slide_container">
+                                            <div class="slide">
+                                                <a href="#" class="logo_img"><img src="#" alt="logo"></a>
                                             </div>
-                                        </li>
-                                        <li><a href="#">출산준비/용품</a></li>
-                                        <li><a href="#">아울렛</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">BRAND</a>
-                                    <a href="#" class="more_btn"><img src="#" alt="더보기"></a>
-                                </li>
-                                <li>
-                                    <a href="#">EVENT</a>
-                                    <a href="#" class="more_btn"><img src="#" alt="더보기"></a></a>
-                                </li>
-                                <li>
-                                    <a href="#">OUTLET</a>
-                                    <a href="#" class="more_btn"><img src="#" alt="더보기"></a></a>
-                                </li>
-                                <li>
-                                    <a href="#">GIFT SHOP</a>
-                                    <a href="#" class="more_btn"><img src="#" alt="더보기"></a></a>
-                                </li>
-                                <li>
-                                    <a href="#">COMMUNITY</a>
-                                    <a href="#" class="more_btn"><img src="#" alt="더보기"></a></a>
-                                </li>
-                            </ul>
-                            <div class="lnb">
-                                <a href="#" class="mypage_btn">마이페이지</a>
-                                <a href="#" class="order_btn">주문조회</a>
-                                <a href="#" class="inquiry_btn">1:1 문의</a>
-                                <a href="#" class="like_product_btn">관심상품</a>
-                                <a href="#" class="questions_btn">자주 묻는 질문</a>
-                            </div>
-                            <div class="bottom">
-                                <p>HERITAGE</p>
-                                <p>아가방의 로고에 담긴 헤리지티</p>
-                                <div id="logo_heritage_slide_wrap">
-                                    <div class="slide_container">
-                                        <div class="slide">
-                                            <a href="#" class="logo_img"><img src="#" alt="logo"></a>
-                                        </div>
-                                        <div class="slide">
-                                            <a href="#" class="logo_img"><img src="#" alt="logo"></a>
-                                        </div>
-                                        <div class="slide">
-                                            <a href="#" class="logo_img"><img src="#" alt="logo"></a>
-                                        </div>
-                                        <div class="slide">
-                                            <a href="#" class="logo_img"><img src="#" alt="logo"></a>
-                                        </div>
-                                        <div class="slide">
-                                            <a href="#" class="logo_img"><img src="#" alt="logo"></a>
-                                        </div>
-                                        <div class="slide">
-                                            <a href="#" class="logo_img"><img src="#" alt="logo"></a>
-                                        </div>
-                                        <div class="slide">
-                                            <a href="#" class="logo_img"><img src="#" alt="logo"></a>
+                                            <div class="slide">
+                                                <a href="#" class="logo_img"><img src="#" alt="logo"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href="#" class="logo_img"><img src="#" alt="logo"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href="#" class="logo_img"><img src="#" alt="logo"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href="#" class="logo_img"><img src="#" alt="logo"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href="#" class="logo_img"><img src="#" alt="logo"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href="#" class="logo_img"><img src="#" alt="logo"></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
