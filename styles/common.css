@@ -17,6 +17,7 @@ body {position:relative;}
 /* ========================================================= */
 #wrap header nav #gnb .menu {
     display:flex; flex-flow:row nowrap;
+    
 }
 #wrap header nav #gnb .menu a {font-size:1.4rem;}
 #wrap header nav #gnb .menu > a {}

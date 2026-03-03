@@ -1,22 +1,52 @@
 /* index.css */
-#wrap main {}
-#wrap main #hero_bnr_slide_wrap {}
+#wrap main {
+    margin:0 auto;
+}
+#wrap main #hero_bnr_slide_wrap {
+    max-width:1920px; height:1080px;
+    overflow:hidden;
+    margin:0 auto;
+}
 #wrap main #hero_bnr_slide_wrap .slide_container {}
-#wrap main #hero_bnr_slide_wrap .slide_container .slide {}
-#wrap main #hero_bnr_slide_wrap .slide_container .slide .slide_background {}
-#wrap main #hero_bnr_slide_wrap .slide_container .slide .slide_background .text {}
+#wrap main #hero_bnr_slide_wrap .slide_container .slide {
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between; align-items:center;
+    position:relative;
+}
+#wrap main #hero_bnr_slide_wrap .slide_container .slide .slide_background {
+    position:absolute; left:0; top:0;
+    width:1920px; height:1080px; display:block;
+    background-image:url(../images/hero_bnr1.jpg);
+    background-position:center bottom;
+    background-size:cover;
+    background-color: aqua;
+}
+#wrap main #hero_bnr_slide_wrap .slide_container .slide .slide_background .text {
+    position:absolute; left:50%; top:80%; transform:translateX(-50%);
+}
+#wrap main #hero_bnr_slide_wrap .slide_container .slide .slide_background .text .brand {
+    font-size:0.80rem;
+}
 #wrap main #hero_bnr_slide_wrap .slide_container .slide .slide_background .text > p {}
-#wrap main #hero_bnr_slide_wrap .slide_container .slide .slide_background .text h1 {}
-#wrap main #hero_bnr_slide_wrap .slide_container .slide .slide_background .text p {}
+#wrap main #hero_bnr_slide_wrap .slide_container .slide .slide_background .text h1 {
+    font-size:2rem;
+}
+#wrap main #hero_bnr_slide_wrap .slide_container .slide .slide_background .text p {
+    font-size:0.90rem;
+}
 #wrap main #hero_bnr_slide_wrap .prev {}
 #wrap main #hero_bnr_slide_wrap .next {}
 #wrap main #hero_bnr_slide_wrap .pagination {}
 #wrap main #hero_bnr_slide_wrap .pagination .active {}
 #wrap main #hero_bnr_slide_wrap .pagination span
-#wrap main .steady_seller {}
+#wrap main .steady_seller {
+    display:flex; flex-flow:column nowrap;
+    align-items:center; justify-content:center;
+}
 #wrap main .steady_seller .title {
-    display:flex;
-    flex-flow:row nowrap;
+    display:flex; flex-flow:row nowrap;
+    align-items:center; justify-content:space-between;
+    width:1114px;
 }
 #wrap main .steady_seller .title .text {
     align-content:space-between;
@@ -30,17 +60,22 @@
 #wrap main .steady_seller .title .right_control_btn .prev {}
 #wrap main .steady_seller .title .right_control_btn .next {}
 #wrap main .steady_seller .contents {
+    display:flex; flex-flow:row nowrap;
+    align-items:center; justify-content:space-between;
+    overflow:hidden;
+    width:100%;
     font-size:0.8125rem;
-    display:inline-block;
     line-height:1.5;
 }
-#wrap main .steady_seller .contents .product {}
+#wrap main .steady_seller .contents .product {
+    width:272.5px;
+}
 #wrap main .steady_seller .contents .product .thumnail {
     position:relative;
 }
 #wrap main .steady_seller .contents .product .thumnail a {}
 #wrap main .steady_seller .contents .product .thumnail a img {
-    width: 347.4px;
+    width: 100%;
 }
 #wrap main .steady_seller .contents .product .thumnail .like {}
 #wrap main .steady_seller .contents .product .thumnail .like img {
