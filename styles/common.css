@@ -1,11 +1,15 @@
 /* 공통디자인 common.css */
 /* header, footer */
-body {position:relative;}
-#wrap {}
+body {
+    position:relative;
+}
+#wrap {
+    margin:0 auto;
+    max-width:1920px;
+}
 #wrap header {
     background-color: blanchedalmond;
     height:96px; padding:0 60px;
-    min-width:1800px;
     display:flex; flex-flow:row nowrap;
     justify-content:space-between; align-items:center;
     position:fixed; left:0; top:0; z-index:999; width:100%;
@@ -171,6 +175,22 @@ body {position:relative;}
 #wrap header .sub_menu .login_menu .cart a {}
 #wrap header .sub_menu .login_menu .cart a img {}
 #wrap header .sub_menu .login_menu .cart a span {}
+/* ============================== main */
+#wrap main .main_container .title {
+    display:flex; flex-flow:row nowrap;
+    align-items:center; justify-content:space-between;
+}
+#wrap main .main_container .title .text {
+    margin-bottom:40px;
+}
+#wrap main .main_container .title .text h1 {font-size:1.6rem; margin-bottom:8px;}
+#wrap main .main_container .title .text p {font-size:0.9375rem}
+#wrap main .main_container .title .right_control_btn {
+
+}
+#wrap main .main_container .title .right_control_btn a {}
+#wrap main .main_container .title .right_control_btn .prev {}
+#wrap main .main_container .title .right_control_btn .next {}
 /* ======================================================================== footer */
 #wrap footer {}
 #wrap footer .company_info {}
