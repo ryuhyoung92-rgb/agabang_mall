@@ -5,14 +5,14 @@ body {
 }
 #wrap {
     margin:0 auto;
-    max-width:1920px;
+    width:1920px;
 }
 #wrap header {
-    background-color: blanchedalmond;
-    height:96px; padding:0 60px;
+    background-color: blanchedalmond; margin:0 auto;
+    height:96px; padding:0 60px; width:1920px;
     display:flex; flex-flow:row nowrap;
     justify-content:space-between; align-items:center;
-    position:fixed; left:0; top:0; z-index:999; width:100%;
+    position:fixed; left:50%; top:0; transform:translateX(-50%); z-index:999;
 }
 #wrap header nav {}
 #wrap header nav #gnb {}
@@ -21,7 +21,6 @@ body {
 /* ========================================================= */
 #wrap header nav #gnb .menu {
     display:flex; flex-flow:row nowrap;
-    
 }
 #wrap header nav #gnb .menu a {font-size:1.4rem;}
 #wrap header nav #gnb .menu > a {}
@@ -176,6 +175,8 @@ body {
 #wrap header .sub_menu .login_menu .cart a img {}
 #wrap header .sub_menu .login_menu .cart a span {}
 /* ============================== main */
+#wrap main .main_container,
+#wrap main .main_container2 {margin-bottom:160px;}
 #wrap main .main_container .title {
     display:flex; flex-flow:row nowrap;
     align-items:center; justify-content:space-between;
@@ -191,6 +192,64 @@ body {
 #wrap main .main_container .title .right_control_btn a {}
 #wrap main .main_container .title .right_control_btn .prev {}
 #wrap main .main_container .title .right_control_btn .next {}
+/* ========================================================================상품공통 */
+/* ========================================================================1. contents */
+#wrap main .contents {
+    display:flex; flex-flow:row nowrap;
+    align-items:center; justify-content:space-between;
+    overflow:hidden; width:100%;
+    font-size:0.8125rem;
+    line-height:1.5; gap:8px;
+}
+#wrap main .contents .product {
+    background-color: aqua;
+}
+/* ========================================================================2. thumnail */
+#wrap main .contents .product .thumnail {
+    position:relative; width:424px;
+    margin-bottom:16px;
+}
+#wrap main .contents .product .thumnail a img {
+    width:100%; position:relative;
+}
+#wrap main .contents .product .thumnail .like {
+    width:24px;
+    position:absolute; right:3%; top:3%;
+}
+#wrap main .contents .product .thumnail:hover a {
+    display:block;
+    box-shadow:0, 2, 5px rgba(0,0,0,0.5);
+}
+#wrap main .contents .product .thumnail .like img {width:100%;}
+#wrap main .contents .product .thumnail .cart {
+    width:95%; height:40px;
+    background-color:#fff; border-radius:2px;
+    position:absolute; left:2.5%; bottom:2.5%;
+    color:#555; font-size:1.2rem; text-align:center;
+    display:none;
+}
+#wrap main .contents .product .thumnail .cart img {width:100%;}
+/* ========================================================================3. product_info */
+#wrap main .contents .product .product_info {
+    align-content:space-between;
+}
+#wrap main .contents .product .product_info .brand {
+    margin-bottom:8px; font-size:0.88rem; 
+    color:#3a3a3a; font-weight:600;
+}
+#wrap main .contents .product .product_info h2 {
+    font-size:0.88rem; 
+    color:#6a6a6a; margin-bottom:16px;
+}
+#wrap main .contents .product .product_info h2 img {}
+#wrap main .contents .product .product_info .price {color:#3a3a3a;}
+#wrap main .contents .brand {}
+#wrap main .contents .brand h2 {}
+#wrap main .contents .brand h2 a {}
+#wrap main .contents .brand .price {}
+#wrap main .contents .brand .price del {}
+#wrap main .contents .product .product_info .price em {color:#ff730a; margin-right:8px;}
+#wrap main .contents .product .product_info .price del {color:#9a9a9a; margin-left:8px;}
 /* ======================================================================== footer */
 #wrap footer {}
 #wrap footer .company_info {}
