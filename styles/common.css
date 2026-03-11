@@ -5,24 +5,27 @@ body {
 }
 #wrap {
     margin:0 auto;
-    width:1920px;
+    width:100%;
 }
 #wrap header {
     background-color: blanchedalmond; margin:0 auto;
-    height:96px; padding:0 60px; width:1920px;
+    height:96px; padding:0 60px; min-width:1920px;
     display:flex; flex-flow:row nowrap;
     justify-content:space-between; align-items:center;
-    position:fixed; left:50%; top:0; transform:translateX(-50%); z-index:999;
+    position:fixed; left:0; top:0; z-index:999;
 }
 #wrap header nav {}
 #wrap header nav #gnb {}
 /* ===================================== header 공통이미지 크기 */
-#wrap header nav #gnb img {width:24px;}
+#wrap header nav #gnb img {width:16px; margin-right:4px;}
 /* ========================================================= */
 #wrap header nav #gnb .menu {
     display:flex; flex-flow:row nowrap;
+    align-items:center; justify-content:center;
 }
-#wrap header nav #gnb .menu a {font-size:1.4rem;}
+#wrap header nav #gnb .menu a {
+    font-size:0.88rem;
+}
 #wrap header nav #gnb .menu > a {}
 #wrap header nav #gnb .menu a img {}
 #wrap header nav #gnb .menu .lnb_depth1 {
@@ -152,18 +155,22 @@ body {
 #wrap header nav #gnb .search_open_box .lnb_depth1 .bottom .popular_search li {}
 #wrap header nav #gnb .search_open_box .lnb_depth1 .bottom .popular_search li span {}
 #wrap header nav #gnb .search_open_box .lnb_depth1 .bottom .popular_search li span a {}
-#wrap header h1 {}
+#wrap header h1 {
+    position:absolute; left:50%; top:50%; transform:translate(-50%, -50%);
+}
 #wrap header h1 a {}
-#wrap header h1 a img {}
+#wrap header h1 a img {width:100%;}
 #wrap header .sub_menu {}
 #wrap header .sub_menu .login_menu {
-    display:flex; flex-flow: row nowrap;
+    display:flex; flex-flow:row nowrap;
+    align-items:center; justify-content:center;
 }
-#wrap header .sub_menu .login_menu li {}
-#wrap header .sub_menu .login_menu li a {
-    font-size:1.4rem;
+#wrap header .sub_menu .login_menu li {
+    margin-right:24px;
 }
-#wrap header .sub_menu .login_menu li a img {width:24px;}
+#wrap header .sub_menu .login_menu li:last-child {margin-right:0;}
+#wrap header .sub_menu .login_menu li a {font-size:0.88rem;}
+#wrap header .sub_menu .login_menu li a img {width:16px; margin-right:4px;}
 #wrap header .sub_menu .login_menu .login {}
 #wrap header .sub_menu .login_menu .login a {}
 #wrap header .sub_menu .login_menu .login a img {}
@@ -176,7 +183,7 @@ body {
 #wrap header .sub_menu .login_menu .cart a span {}
 /* ============================== main */
 #wrap main .main_container,
-#wrap main .main_container2 {margin-bottom:160px;}
+#wrap main .main_container2 {margin-bottom:160px; padding:0 100px;}
 #wrap main .main_container .title {
     display:flex; flex-flow:row nowrap;
     align-items:center; justify-content:space-between;
@@ -250,6 +257,47 @@ body {
 #wrap main .contents .brand .price del {}
 #wrap main .contents .product .product_info .price em {color:#ff730a; margin-right:8px;}
 #wrap main .contents .product .product_info .price del {color:#9a9a9a; margin-left:8px;}
+/* ======================================================================== brand _공통디자인 */
+#wrap main .main_container2 .product {
+    display:flex; flex-flow:row nowrap; gap:8px;
+}
+#wrap main .main_container2 .product .main_product {
+    background-position:center;
+    background-size:cover;
+    width:856px; height:856px;
+    display:flex; flex-flow:row nowrap;
+    justify-content:space-between;
+    position:relative;
+}
+#wrap main .main_container2 .product .main_product::after {
+    content:''; display:block; width:100%; height:70%;
+    position:absolute; left:0; bottom:0; z-index:30;
+    background:linear-gradient(360deg, #000, transparent);
+    opacity: 0.5;
+}
+#wrap main .main_container2 .product .main_product .text_contents {
+    /* background-color: bisque; */
+    position:absolute; left:40px; bottom:40px; z-index:50;
+}
+#wrap main .main_container2 .product .main_product .text_contents h2 {
+    font-size:2rem; color:#fff;
+    margin:0 0 16px;
+}
+#wrap main .main_container2 .product .main_product .text_contents p {
+    color:#fff; margin:0 0 32px;
+    line-height:1.5;
+}
+#wrap main .main_container2 .product .main_product .text_contents .more {
+    background-color:#fff; opacity:0.8;
+    padding:10px 12px 10px 16px; color:#3a3a3a;
+    margin:0;
+}
+#wrap main .main_container2 .product .main_product .text_contents .more img {}
+#wrap main .main_container2 .product .gift_set {
+    width:856px; height:856px;
+    background-color:#f8f8f8;
+    overflow:hidden; position:relative;
+}
 /* ======================================================================== footer */
 #wrap footer {}
 #wrap footer .company_info {}
