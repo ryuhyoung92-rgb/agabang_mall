@@ -8,7 +8,7 @@ body {
     width:100%;
 }
 #wrap header {
-    background-color: blanchedalmond; margin:0 auto;
+    background-color: blanchedalmond;
     height:96px; padding:0 60px; min-width:1920px;
     display:flex; flex-flow:row nowrap;
     justify-content:space-between; align-items:center;
@@ -292,7 +292,7 @@ body {
     padding:10px 12px 10px 16px; color:#3a3a3a;
     margin:0;
 }
-#wrap main .main_container2 .product .main_product .text_contents .more img {}
+#wrap main .main_container2 .product .main_product .text_contents .more img {width:100%;}
 #wrap main .main_container2 .product .gift_set {
     width:856px; height:856px;
     background-color:#f8f8f8;
